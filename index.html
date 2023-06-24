@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./script.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>Registro Hoja de vida</title>
+</head>
+
+<body>
+  <div id="contenedor">
+    <h1>Hoja de Vida</h1>
+    <form id="hoja-de-vida" action="/">
+      <!--Datos personales-->
+      <div id="datos-personales">
+        <h2>Datos Personales</h2>
+        <div class="datos-tarjeta">
+          <div class="input-control">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" name="nombre" id="nombre">
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad">
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label for="telefono">Teléfono</label>
+            <input type="text" name="telefono" id="telefono">
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label for="direccion">Dirección</label>
+            <input type="text" name="direccion" id="direccion">
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label for="ocupacion">Ocupación</label>
+            <input type="text" name="ocupacion" id="ocupacion">
+            <div class="error"></div>
+          </div>
+        </div>
+      </div>
+      <!--Estudios-->
+      <div id="educacion">
+        <h2>Educación</h2>
+        <div class="educacion-tarjeta">
+          <div class="input-control">
+            <label for="institucion">Nombre Institución</label>
+            <input type="text" name="institucion" id="institucion">
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label for="carrera">Nombre de la Carrera</label>
+            <input type="text" name="carrera" id="carrera">
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label for="cursando">Cursando</label>
+            <input type="checkbox" name="cursando" id="cursando">
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label for="fecha-inicio">Fecha de inicio</label>
+            <input type="date" name="fecha-inicio" id="fecha-inicio">
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label for="fecha-culminacion">Fecha de culminación</label>
+            <input type="date" name="fecha-culminacion" id="fecha-culminacion">
+            <div class="error"></div>
+          </div>
+        </div>
+      </div>
+      <!--Acerca de mi-->
+      <div id="acerca-de-mi">
+        <h2>Acerca de mi</h2>
+        <div class="informacionUsuario">
+          <textarea name="acerca" id="acerca" cols="20" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="archivo-CV input-control">
+        <label for="archivo-cv">PDF Hoja de Vida</label>
+        <input type="file" name="archivo-cv" id="archivo-cv">
+      </div>
+      <button type="submit">Registrar hoja de vida</button>
+    </form>
+  </div>
+</body>
+
+</html>
